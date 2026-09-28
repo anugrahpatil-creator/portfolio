@@ -1,0 +1,117 @@
+.portfolio-footer {
+  background: var(--c-primary-bg);
+  border-top: 1px solid var(--c-mid-blue);
+  padding: 4rem 0 2.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-branding {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.footer-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--c-ice-blue);
+}
+
+.footer-title {
+  font-size: 0.9rem;
+  color: var(--c-light-blue);
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--c-dark-blue);
+  border: 1px solid var(--c-mid-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-ice-blue);
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.footer-social-link:hover {
+  background: var(--c-light-blue);
+  border-color: var(--c-light-blue);
+  color: var(--c-primary-bg);
+  transform: translateY(-2px);
+  box-shadow: var(--glow-blue);
+}
+
+.scroll-to-top-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  background: var(--c-dark-blue);
+  border: 1px solid var(--c-mid-blue);
+  color: var(--c-light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.scroll-to-top-btn:hover {
+  background: var(--c-light-blue);
+  color: var(--c-primary-bg);
+  border-color: var(--c-light-blue);
+  box-shadow: var(--glow-blue);
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(73, 118, 159, 0.25);
+  color: var(--c-light-teal);
+  font-size: 0.85rem;
+}
+
+.footer-tech-note {
+  color: var(--c-light-teal);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 640px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
